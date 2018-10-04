@@ -1,13 +1,24 @@
-**Todo**
+**Installtion/Build Steps**
     
-    - Relative URL, #, Blanks - Exception handling
-    - URLValidator
-    - Unit test
-    - Regex
-    - Unique URLS_HASHSET
-    - Threading
+1. Please clone Source code from git URL <code>https://github.com/karankaw/codingTest</code>
+
++ Open Eclipse and do following steps
++ Window -> Preferences -> Run/Debug -> Console -> "Limit console output"<br/>
++ Uncheck the Checkbox - "It enables to see Big Logs on Console of Eclipse"
++ Import Maven Projects into Eclipse and do Maven Build
++ Run Solution.java with some url in Program Argument like "http://www.prudential.co.uk"
++ See Sample Output of Console - for Prudential URL in file - *Prudential_Co_Uk_TESTRUN.txt*
+
+-------
+Refer Files:
+- Eclipse_Console_Unlimited_Setting.png
+- Run_Solution_Eclipse_Screenshot.png
     
-    
+-------
+
+** Improvements **
+- Instead of Logging to Console - We can cause each of the WebPage to write results in Separate File
+- We can use Multi-Threaded Approach for Worker Threads to run JSoup
     
 ###Architecture Design showing Traversal Depth = 2
 ######HTMLPage1 = Level 0  -  JSOUP traverses _HTMLPage1_
@@ -28,4 +39,3 @@
 
 
    
-_https://stackoverflow.com/questions/2600653/adjusting-eclipse-console-size_
