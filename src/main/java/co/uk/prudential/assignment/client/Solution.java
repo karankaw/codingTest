@@ -8,8 +8,8 @@ public class Solution {
 	public static void main(String args[]) {
 
 		String url = Utility.validateParseInput(args);
-		Crawler spider = new Crawler(url);
-		spider.crawlPage();
+		Crawler spider = new Crawler();
+		spider.crawlWebPage(url,0);
 	}
 
 }
