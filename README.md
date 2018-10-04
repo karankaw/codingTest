@@ -10,16 +10,25 @@
 + See Sample Output of Console - for Prudential URL in file - *Prudential_Co_Uk_TESTRUN.txt*
 
 -------
-Refer Files:
+Please Refer Screenshot Files:
 - Eclipse_Console_Unlimited_Setting.png
 - Run_Solution_Eclipse_Screenshot.png
     
+-------
+Console Output
+
+- It Ignores URL having Domain outside original URL
+- It Has NESTED_LEVEL = 3 (Depth Traversal)
+
 -------
 
 ** Improvements **
 - Instead of Logging to Console - We can cause each of the WebPage to write results in Separate File
 - We can use Multi-Threaded Approach for Worker Threads to run JSoup
-    
+ 
+
+-------
+ 
 ###Architecture Design showing Traversal Depth = 2
 ######HTMLPage1 = Level 0  -  JSOUP traverses _HTMLPage1_
 ######Link1/Link2/Link3 = Level 1  -  JSOUP traverses _Link1/Link2/Link3_
