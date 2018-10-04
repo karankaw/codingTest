@@ -6,16 +6,22 @@
 + Window -> Preferences -> Run/Debug -> Console -> "Limit console output"<br/>
 + Uncheck the Checkbox - "It enables to see Big Logs on Console of Eclipse"
 + Import Maven Projects into Eclipse and do Maven Build
-+ Run Solution.java with some url in Program Argument like "http://www.prudential.co.uk"
++ Run <code>Solution.java</code> with some url in Program Argument like "http://www.prudential.co.uk"
 + See Sample Output of Console - for Prudential URL in file - *Prudential_Co_Uk_TESTRUN.txt*
 
 -------
-Please Refer Screenshot Files:
+**Please Refer Screenshot Files:**
 - Eclipse_Console_Unlimited_Setting.png
 - Run_Solution_Eclipse_Screenshot.png
-    
 -------
-Console Output
+
+**Other Remarks**
+- Added JUNIT Test Cases
+- Added Validations for Input Argument
+- Added Static Helper Utility
+- We can change DEPTH_TRAVERSAL, which can lead to higher Coverage
+-------
+**Console Output**
 
 - It Ignores URL having Domain outside original URL
 - It Has NESTED_LEVEL = 3 (Depth Traversal)
@@ -23,7 +29,7 @@ Console Output
 -------
 
 ** Improvements **
-- Instead of Logging to Console - We can cause each of the WebPage to write results in Separate File
+- Instead of Logging to Console - We can cause each of the WebPage to write results in Separate TXT File
 - We can use Multi-Threaded Approach for Worker Threads to run JSoup
  
 
