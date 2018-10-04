@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Test Page</title>
+</head>
+<body>
+	<p><a href="NoSlash/Path1">PathDoes Not Begin With Slash</a></p>
+	<p><a href="/Slash/Path2">Path  Begins With Slash</a></p>
+	<!-- Everything without a Valid URL in href will be treated as like Relative URLs and appended base URL -->
+	<p><a href="www.cargames.com">Different Domain Path</a></p>
+	<p><a href="ftp://download.org">Different Protocol Jsoup can't handle</a></p>
+	<p><a href="http://example.com:8081/Path/SubPath">Url Link with Port Number</a></p>
+	<!-- webmail.example.com is not same host as example.com as per java.net.URL specification -->
+	<p><a href="https://webmail.example.com">Webserver Hosted on Similar Not Same Host</a></p>
+	<p><a href="wrongprotocol://example.com">Wrong Protocol Link</a></p>
+	<p><a href="HTTPS://SERVER1.EXAMPLE.COM">UPPER CASE URL LINK</a></p>
+	<p><a href="#div1">In-line Navigation</a></p>
+	<p><a href="https://webmail.example.com"">Duplicate - Webserver Hosted on Same Host</a></p>
+	<p><a href="/Slash/Path2">Duplicate - Path  Begins With Slash</a></p>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--  It jumps here -->
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<div id="div1">
+	Jump here
+	</div>
+</body>
+
+</html>
