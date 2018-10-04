@@ -97,7 +97,7 @@ public class Crawler {
 				    	crawlWebPage(linkStr, depth);
 				    }
 				}else{
-					System.out.println("URL Parsed: '" + url + "'  is Invalid" );
+					System.out.println("URL Parsed: '" + url + "'  is Invalid or is Outside Original Domain" );
 					System.out.println("------------X------------X------------X------------X------------X------------X------------X\n");
 				}
 			} catch (IOException exp) {

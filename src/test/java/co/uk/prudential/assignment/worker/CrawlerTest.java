@@ -19,7 +19,7 @@ public class CrawlerTest {
 		crawler = new Crawler();
 	}
 
-	@Ignore
+
 	@Test
 	public void crawlHtmlPageShouldReturnListOfLinksAndImages() throws IOException {
 		String htmlFileName = "Input.html";
@@ -27,7 +27,7 @@ public class CrawlerTest {
 		crawler.crawlHtmlPage(htmlFileName, 0, defaultPrefixURL);
 	}
 	
-	@Ignore
+	
 	@Test
 	public void mimicWebPageCrawlBadHtmlPageAndLogErrors() throws IOException {
 		String htmlFileName = "BadInput.html";
